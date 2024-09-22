@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <i class="fas fa-user-graduate"></i> Student Registration System
+        </h1>
+        <p class="description">
+          Efficiently manage and organize student information with our
+          registration system.
+        </p>
+      </header>
+
+      <div class="content-wrapper">
+        <div class="form-section">
+          <form id="studentForm">
+            <input type="text" id="name" placeholder="Student Name" required />
+            <input
+              type="text"
+              id="studentId"
+              placeholder="Student ID"
+              required
+            />
+            <input type="email" id="email" placeholder="Email ID" required />
+            <input type="tel" id="contact" placeholder="Contact No." required />
+            <button type="submit">
+              <i class="fas fa-plus"></i> Register Student
+            </button>
+          </form>
+        </div>
+
+        <div class="table-section">
+          <div class="records-container">
+            <table id="studentTable">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Student ID</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
